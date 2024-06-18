@@ -31,13 +31,13 @@ xpack.reporting.encryptionKey: d5aba6edd44d5435288a76cf8c48d6e9
 xpack.security.encryptionKey: d3dd435a4ba680c26195f15baf7fae86
 ## Fleet
 ## https://www.elastic.co/guide/en/kibana/current/fleet-settings-kb.html
-xpack.fleet.agents.fleet_server.hosts: [ http://192.168.7.211:8220 ]
+xpack.fleet.agents.fleet_server.hosts: [ http://fleet-server:8220 ]
 
 xpack.fleet.outputs:
   - id: fleet-default-output
     name: default
     type: elasticsearch
-    hosts: [ http://192.168.7.211:9200 ]
+    hosts: [ http://elasticsearch:9200 ]
     is_default: true
     is_default_monitoring: true
 
